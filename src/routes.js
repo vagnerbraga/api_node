@@ -1,18 +1,14 @@
-const express = require('express');
+const { Router }  = require('express');
 
-const routes = express.Router();
+const { create } = require('./controllers/file');
 
-const ProductController = require('./controllers/ProductsController');
+const routes = Router();
 
 routes.get("/", (req,res)=>{
 
-    return res.send("tererererre");
+
+    create("vanger", "vanger vagner vanger vagner vanger vagner");
 
 });
-routes.get("/products", ProductController.index);
-routes.get("/products/:id", ProductController.show);
-routes.post("/products", ProductController.store);
-routes.put("/products/:id", ProductController.update);
-routes.delete("/products/:id", ProductController.delete);
 
 module.exports = routes;
