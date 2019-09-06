@@ -6,13 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "babel ./server.js -o index.js; nodemon index.js"
-    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.5.5",
+    "axios-fileupload": "0.0.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mongoose": "^5.6.9",
